@@ -8,6 +8,8 @@ function onInputBlur(event) {
     let length = Number(refs.input.dataset.length);
     
     if (event.currentTarget.value.length !== length) { 
-       refs.input.classList.add('invalid');
-    } refs.input.classList.add('valid');
+      return refs.input.classList.add('invalid');
+    } return refs.input.classList.replace('invalid', 'valid');
 }
+
+
